@@ -17,4 +17,4 @@ def binarySearch(a, target):
 a = np.random.randint(0, 100, 50)
 a.sort()
 target = a[10]
-print(binarySearch(a, target))
+print(binarySearch(a, target))zz
