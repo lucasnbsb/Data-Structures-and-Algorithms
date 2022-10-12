@@ -91,7 +91,7 @@ if __name__ == '__main__':
     # deserialize('[2,1,3,0,7,9,1,2,null,1,0,null,null,8,8,null,null,null,null,7]')
     # deserialize('[3,9,20,null,null,15,7]')
     # deserialize('[1,2,3,null,5,null,4]')
-    #
+    
     root = deserialize('[2,1,3,0,7,9,1,2,null,1,0,null,null,8,8,null,null,null,null,7]')
     #drawtree(root)
     #root = deserialize('[2,1,3,0,7,9,1,2,null,1,0,null,null,8,8,null,null,null,null,7]')
