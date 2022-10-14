@@ -31,11 +31,16 @@ def largestPerimeter(nums: List[int]) -> int:
 def canFormTriangle(nums):
     return ((nums[0]+nums[1])>nums[2] and (nums[2]+nums[1])>nums[1] and (nums[0]+nums[2])>nums[1])
 
+def subsets(self, nums: List[int]) -> List[List[int]]:
+    subsets = [[]]
+    for i in range(len(nums)):
+        subsets.append(nums[i])
+
 if __name__ == '__main__':
     nums = [2,1,3,50,7,9,1,2,1,90,8,8,7]
     nums.sort()
-    
-    for i in range(len(nums)-1, 1, -1):
-        (nums[i], nums[i-1], nums[i-2])
 
-    print(canFormTriangle([90,50,9]))
+    nums123 = [1,2,3]
+    
+
+    print(subsets(nums123))

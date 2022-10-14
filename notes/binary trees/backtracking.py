@@ -29,3 +29,16 @@ def leafPath(root, path):
         return True
     path.pop()
     return False
+
+# Generalized backtracking
+
+# 1 - stop condition (the end of the tree. might be index == len(arr) for arrays)
+# -> On stop: add to the return whatever is in the acumulator
+
+# add current
+# backtrack
+
+# remove current
+# backtrack
+
+# call backtrack from the start of the input
