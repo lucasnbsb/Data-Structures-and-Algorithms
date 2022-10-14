@@ -2,6 +2,8 @@ from collections import deque
 import queue
 from typing import List, Optional
 
+from numpy import true_divide
+
 
 class TreeNode:
     def __init__(self, val, left=None, right=None):
@@ -85,14 +87,33 @@ def rightSideView(root: Optional[TreeNode]) -> List[int]:
             firstInLevel = True
         return res
 
-        
+
+def treverse(node, path, target):
+    print(target)
+    if not node:
+        return False
+    
+    path.append(node.val)
+    if not node.left and not node.right and sum(path) == target:
+        return True
+    if treverse(node.left, path, target):
+        return True
+    if treverse(node.right, path, target):
+        return True
+    path.pop()
+    return False
+
+def hasPathSum( root: Optional[TreeNode], targetSum: int) -> bool:
+    path = []
+    return treverse( root, path, targetSum)
 
 if __name__ == '__main__':
     # deserialize('[2,1,3,0,7,9,1,2,null,1,0,null,null,8,8,null,null,null,null,7]')
     # deserialize('[3,9,20,null,null,15,7]')
     # deserialize('[1,2,3,null,5,null,4]')
-    
-    root = deserialize('[2,1,3,0,7,9,1,2,null,1,0,null,null,8,8,null,null,null,null,7]')
+    # [5,4,8,11,null,13,4,7,2,null,null,null,1]
+
+    root = deserialize('[5,4,8,11,null,13,4,7,2,null,null,null,1]')
     #drawtree(root)
     #root = deserialize('[2,1,3,0,7,9,1,2,null,1,0,null,null,8,8,null,null,null,null,7]')
-    print(rightSideView(root))
+    print(hasPathSum(root, 22))
