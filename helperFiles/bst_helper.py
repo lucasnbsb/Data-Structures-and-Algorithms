@@ -50,63 +50,9 @@ def drawtree(root):
     t.hideturtle()
     turtle.mainloop()
 
-def bfs(root):
-    queue = deque()
-    if root:
-        queue.append(root)
-    level = 0
-    while len(queue) > 0:
-        print("level: ", level)
-        for i in range(len(queue)):
-            curr = queue.popleft()
-            print(curr.val)
-            if curr.left:
-                queue.append(curr.left)
-            if curr.right:
-                queue.append(curr.right)
-        level += 1
-
-
-def rightSideView(root: Optional[TreeNode]) -> List[int]:
-        queue = deque()
-        if not root:
-            return []
-        res = []
-        queue.append(root)
-        firstInLevel = True
-        while len(queue) > 0:
-            for i in range(len(queue)):
-                curr = queue.popleft()
-                if firstInLevel:
-                    res.append(curr.val)
-                    firstInLevel = False
-                if curr.right:
-                    queue.append(curr.right)
-                if curr.left:
-                    queue.append(curr.left)
-            firstInLevel = True
-        return res
-
-
-def treverse(node, path, target):
-    print(target)
-    if not node:
-        return False
-    
-    path.append(node.val)
-    if not node.left and not node.right and sum(path) == target:
-        return True
-    if treverse(node.left, path, target):
-        return True
-    if treverse(node.right, path, target):
-        return True
-    path.pop()
-    return False
-
 def hasPathSum( root: Optional[TreeNode], targetSum: int) -> bool:
     path = []
-    return treverse( root, path, targetSum)
-
+    
 if __name__ == '__main__':
     # deserialize('[2,1,3,0,7,9,1,2,null,1,0,null,null,8,8,null,null,null,null,7]')
     # deserialize('[3,9,20,null,null,15,7]')

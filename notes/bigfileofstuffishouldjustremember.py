@@ -1,7 +1,10 @@
+from collections import deque
 import numpy as np
+# this is the big file of things i should just remember
+
+
 
 # Quicksort:
-
 def quicksort(arr, s, e):
     if (e-s +1) <= 1:
         return
@@ -19,7 +22,6 @@ def quicksort(arr, s, e):
     return arr
 
 # Binary Search:
-
 def binarySearch(a, target):
     left, right  = 0, len(a)-1
     while left<= right:
@@ -30,11 +32,9 @@ def binarySearch(a, target):
     return -1
 
 # Binary search generalized for minimalizing X such that f(x) is the minimum
-
 def binary_search(array) -> int:
     def condition(value) -> bool:
         pass
-
     left, right = 0, len(array)
     while left < right:
         mid = left + ((right - left)>>1)
@@ -43,3 +43,31 @@ def binary_search(array) -> int:
         else:
             left = mid + 1
     return left
+
+# BSF:
+def bfs(root):
+    queue = deque()
+
+    if root:
+        queue.append(root)
+    
+    level = 0
+    while len(queue) > 0:
+        print("level: ", level)
+        for i in range(len(queue)):
+            curr = queue.popleft()
+            print(curr.val)
+            if curr.left:
+                queue.append(curr.left)
+            if curr.right:
+                queue.append(curr.right)
+        level += 1
+
+# DSF:
+    def dfs(root):
+        if not root:
+            return
+        # stop condition
+        # early killswitches
+        dfs(root.left)
+        dfs(root.right)
