@@ -15,7 +15,7 @@
     - while both are good, check and point acordingly
     - one of the pointers are still good, just point the tail to it
 ## 66 Plus One
-    - treverse from smallest position to largest
+    - traverse from smallest position to largest
     - add and set the carry
     - at the end check if the carry is 1 to put the new position
 ## 69 sqrt(x)
@@ -24,7 +24,7 @@
     - DP from 0 to Number of stairs, turns out its fibbonacci
     - on n-1 how many ways to reach goal, what abount n-2, and n-3.
 ## 88 Merge Sorted Arrays
-    - Treverse reversed so you dont have to shift
+    - traverse reversed so you dont have to shift
     - walk along with m and n -> nums[m+n-1] is the first 0 from the back
     - num1 may be left at the end.
 ## 94 Binart Tree Inorder Traversal
@@ -52,7 +52,7 @@
     - Two pointers start and end, start < end, swap and walk
 ## 350 Intersection of Two Arrays
     - count the occurences with a hashmap
-    - treverse the second and decrement the occurences in the map
+    - traverse the second and decrement the occurences in the map
 ## 374 Guess Number Higher Lower
     - Generic Binary search with higher lower
 ## 509 Fibonacci Number
@@ -68,11 +68,11 @@
     - Thats all that it is
 ## 724 Pivot Index
     - Calculate an array of sums up to the position
-    - treverse and check if 2*sum[i] == sum[-1] + nums[-1] (total sum)
+    - traverse and check if 2*sum[i] == sum[-1] + nums[-1] (total sum)
 ## 905 Sort Array By Parity
     - using 2 extra arrays, separate and concatenate
 ## 976 Largest Perimeter Triangle
-    - treverse back to front the miolo of the array running the test
+    - traverse back to front the miolo of the array running the test
 ## 1700 Number of Students unable to Eat
     - track the number of refusals.
     - if everybody or nobody refuses get out
