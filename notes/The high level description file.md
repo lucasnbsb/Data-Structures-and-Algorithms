@@ -101,4 +101,11 @@
     - traverse the input string until 1+size(s)-wordlengh checking the
     validity of the window and appending the index to the result
 
+### 11. Container With Most Water
+    - make a helper method to calculate the area
+    - keep two pointers one at the start and one at the end of the array
+    - check the area of the current pair (start, end)
+    - check which one is bigger and walk the other towards the middle
+    - stop when they cross
+
 # Hard
