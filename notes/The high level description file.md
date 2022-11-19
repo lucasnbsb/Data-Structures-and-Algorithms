@@ -89,4 +89,11 @@
 
 
 # Medium
+### 3  Longest Substring Without Repeating Characters
+    - keep a sliding window, right pointer is just the variable of the foor loop
+    - track a set of the seen characters
+    - remove all characters maching the left pointer as it walks along , till you get to the repeated character
+    - update maxsize after before walking the right pointer
+
+
 # Hard
