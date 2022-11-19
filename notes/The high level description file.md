@@ -95,17 +95,28 @@
     - remove all characters maching the left pointer as it walks along , till you get to the repeated character
     - update maxsize after before walking the right pointer
 
-### 30. Substring with Concatenation of All Words
-    - build a method to check whether the window is valid by traversing it
-    and checking it against a copy of the words dictionary
-    - traverse the input string until 1+size(s)-wordlengh checking the
-    validity of the window and appending the index to the result
-
 ### 11. Container With Most Water
     - make a helper method to calculate the area
     - keep two pointers one at the start and one at the end of the array
     - check the area of the current pair (start, end)
     - check which one is bigger and walk the other towards the middle
     - stop when they cross
+
+### 30. Substring with Concatenation of All Words
+    - build a method to check whether the window is valid by traversing it
+    and checking it against a copy of the words dictionary
+    - traverse the input string until 1+size(s)-wordlengh checking the
+    validity of the window and appending the index to the result
+
+
+
+### 7. Reverse Integer
+    - store a boolean for isnegative on the number
+    - use the absolute value of the number
+    - while x > 0: add the modulo to the output, multiply the output by 10
+    - outside the while divide the output by 10, it will always run one more time
+    - with modulo = 0, not affecting the number
+    - put the negative back in if isneg
+    - all math, no string manipulation for that 96 percentile
 
 # Hard
