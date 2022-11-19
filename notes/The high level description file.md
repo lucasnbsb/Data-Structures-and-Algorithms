@@ -95,5 +95,10 @@
     - remove all characters maching the left pointer as it walks along , till you get to the repeated character
     - update maxsize after before walking the right pointer
 
+### 30. Substring with Concatenation of All Words
+    - build a method to check whether the window is valid by traversing it
+    and checking it against a copy of the words dictionary
+    - traverse the input string until 1+size(s)-wordlengh checking the
+    validity of the window and appending the index to the result
 
 # Hard
