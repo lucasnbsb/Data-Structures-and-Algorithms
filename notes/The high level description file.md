@@ -95,21 +95,6 @@
     - remove all characters maching the left pointer as it walks along , till you get to the repeated character
     - update maxsize after before walking the right pointer
 
-### 11. Container With Most Water
-    - make a helper method to calculate the area
-    - keep two pointers one at the start and one at the end of the array
-    - check the area of the current pair (start, end)
-    - check which one is bigger and walk the other towards the middle
-    - stop when they cross
-
-### 30. Substring with Concatenation of All Words
-    - build a method to check whether the window is valid by traversing it
-    and checking it against a copy of the words dictionary
-    - traverse the input string until 1+size(s)-wordlengh checking the
-    validity of the window and appending the index to the result
-
-
-
 ### 7. Reverse Integer
     - store a boolean for isnegative on the number
     - use the absolute value of the number
@@ -118,5 +103,28 @@
     - with modulo = 0, not affecting the number
     - put the negative back in if isneg
     - all math, no string manipulation for that 96 percentile
+
+### 11. Container With Most Water
+    - make a helper method to calculate the area
+    - keep two pointers one at the start and one at the end of the array
+    - check the area of the current pair (start, end)
+    - check which one is bigger and walk the other towards the middle
+    - stop when they cross
+
+### 17. Letter Combinations of a Phone Number
+    - Basic backtracking problem, iterate through the digits
+    - make a recursive call with each of the letters on a stack
+    - when the digits run out ''.join(the stack) into the output
+
+### 19. Remove Nth Node From End of List
+    - Hint says: keep a second pointer n steps behind
+    - my solution whas to traverse and make an array
+    - then treat the 3 cases. remove at start, end and middle
+
+### 30. Substring with Concatenation of All Words
+    - build a method to check whether the window is valid by traversing it
+    and checking it against a copy of the words dictionary
+    - traverse the input string until 1+size(s)-wordlengh checking the
+    validity of the window and appending the index to the result
 
 # Hard
