@@ -133,4 +133,11 @@
     - traverse the input string until 1+size(s)-wordlengh checking the
     validity of the window and appending the index to the result
 
+### 36. Valid Sudoku
+    - this one hinges heavily on the data structure you choose
+    - get some defaultdict(set)s going. for rows, collumns and squares
+    - the trick is to address the squares one with a tuple made of x//3, y//3 to check for repetitions within the square
+    - then just itterate, check for repetitions on all 3, return false if repeated, and add to the sets if not.
+    
+
 # Hard
