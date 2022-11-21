@@ -121,6 +121,12 @@
     - my solution whas to traverse and make an array
     - then treat the 3 cases. remove at start, end and middle
 
+### 28. Find the Index of the First Occurrence in a String
+    - https://en.wikipedia.org/wiki/Rabin%E2%80%93Karp_algorithm
+    - basically use a hash to check the substring.
+    - but also only do the hash if you have the first letter matching since it`s expensive
+    - take good care of the limits in the range
+
 ### 30. Substring with Concatenation of All Words
     - build a method to check whether the window is valid by traversing it
     and checking it against a copy of the words dictionary
