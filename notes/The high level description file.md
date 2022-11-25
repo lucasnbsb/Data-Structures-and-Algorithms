@@ -138,6 +138,11 @@
     - get some defaultdict(set)s going. for rows, collumns and squares
     - the trick is to address the squares one with a tuple made of x//3, y//3 to check for repetitions within the square
     - then just itterate, check for repetitions on all 3, return false if repeated, and add to the sets if not.
-    
+
+### 54. Spiral Matrix.py
+    - two pointers approach, four pointers edition
+    - big loop, check if pointers cross
+    - four small loops for every direction, check again in the middle for pointers crossing
+    - take a lot of care with the indices on right and bottom for they are out of bounds
 
 # Hard
