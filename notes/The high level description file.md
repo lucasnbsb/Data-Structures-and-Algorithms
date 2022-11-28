@@ -145,4 +145,14 @@
     - four small loops for every direction, check again in the middle for pointers crossing
     - take a lot of care with the indices on right and bottom for they are out of bounds
 
+### 56. Merge Intervals.py
+    - sort the intervals by starting position
+    - traverse the sorted intervals
+    - check if the last interval ends after the current start, if so merge them in the output
+    - if they dont just append to output
+
+### 73. Set Matrix Zeroes
+    - use the first position of the rows and colums to mark for zeroes and sweep around
+    - to actualy do it easier use 2 arrays to index where to blank out
+
 # Hard

@@ -58,8 +58,8 @@ if __name__ == '__main__':
     # deserialize('[3,9,20,null,null,15,7]')
     # deserialize('[1,2,3,null,5,null,4]')
     # [5,4,8,11,null,13,4,7,2,null,null,null,1]
-
+    # [1,2,3,4,5,6,7]
     root = deserialize('[5,4,8,11,null,13,4,7,2,null,null,null,1]')
-    #drawtree(root)
+    drawtree(root)
     #root = deserialize('[2,1,3,0,7,9,1,2,null,1,0,null,null,8,8,null,null,null,null,7]')
     print(hasPathSum(root, 22))
