@@ -156,6 +156,11 @@
     - use the first position of the rows and colums to mark for zeroes and sweep around
     - to actualy do it easier use 2 arrays to index where to blank out
 
+### 238. Product of Array Except Self
+    - calculate the list of prefix multis and postfix multis for every i.
+    - return pre[i]*pos[i]
+    - the operation can be done inside the output array for O(N) extra memory
+
 # Hard
 
 ### Find the running medinan:
