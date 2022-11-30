@@ -1,0 +1,115 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+sys.setrecursionlimit(2000)
+
+#
+# Complete the 'swapNodes' function below.
+#
+# The function is expected to return a 2D_INTEGER_ARRAY.
+# The function accepts following parameters:
+#  1. 2D_INTEGER_ARRAY indexes
+#  2. INTEGER_ARRAY queries
+#
+from collections import deque
+from queue import Queue
+
+class Node:
+    def __init__(self, val):
+        self.val = val
+        self.left = None
+        self.right = None
+
+def bfswap(root, k):
+    queue = deque()
+    if root:
+        queue.append(root)
+    level = 1 # depth is 1 indexed
+    while len(queue) > 0:    
+        for i in range(len(queue)):
+            curr = queue.popleft()
+            if level % k == 0:
+                curr.right, curr.left = curr.left, curr.right
+            if curr.left:
+                queue.append(curr.left)
+            if curr.right:
+                queue.append(curr.right)
+        level += 1
+            
+            
+
+def swapNodes(indexes, queries):
+    n = indexes[0][0]
+    nodesTree = indexes[0:]
+    dummy = root = Node(1)
+    queue = deque()
+    queue.append(root)
+    # Sets up the tree.
+    i = 0
+    while len(queue) > 0:
+        curr = queue.popleft()
+        if nodesTree[i][0] != -1:
+            leftNode = Node(nodesTree[i][0])
+            curr.left = leftNode
+            queue.append(leftNode)
+        else:
+            curr.left = None
+            
+        if nodesTree[i][1] != -1:
+            rightNode = Node(nodesTree[i][1])
+            curr.right = rightNode
+            queue.append(rightNode)
+        else:
+            curr.right = None
+        i += 1
+
+    # performs the inorder traversal
+    tmpOutput = []
+    output = []
+    def inorder(root):
+        if not root:
+            return None
+        inorder(root.left)
+        tmpOutput.append(root.val)
+        inorder(root.right)
+    
+    print(queries)
+    
+    for k in queries:
+        bfswap(dummy, k)
+        inorder(dummy)
+        output.append(tmpOutput)
+        tmpOutput = []
+    
+    return(output)
+    
+    
+
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    n = int(input().strip())
+
+    indexes = []
+
+    for _ in range(n):
+        indexes.append(list(map(int, input().rstrip().split())))
+
+    queries_count = int(input().strip())
+
+    queries = []
+
+    for _ in range(queries_count):
+        queries_item = int(input().strip())
+        queries.append(queries_item)
+
+    result = swapNodes(indexes, queries)
+
+    fptr.write('\n'.join([' '.join(map(str, x)) for x in result]))
+    fptr.write('\n')
+
+    fptr.close()

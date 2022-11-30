@@ -1,3 +1,4 @@
+
 # A high level description of every solution i have submitted to leetcode
 
 # Easy
@@ -164,3 +165,10 @@
     - determine which one is always gonna be bigger, test and pushpop accordingly
     - to get the median check if the designated bigger is bigger, if so peek it
     - if not they are equal, so peak both and divide by 2
+
+### swap nodes algo
+    - not that difficult, assemble the tree by using a queue (basicaly bfs)
+    - implement the inorder traversal
+    - do bfs but swapping if the level (1 indexed ) % k == 0.
+    - push the result to the output
+    - make sure that the recursion pile doesnt break.
