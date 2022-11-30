@@ -156,3 +156,11 @@
     - to actualy do it easier use 2 arrays to index where to blank out
 
 # Hard
+
+### Find the running medinan:
+    - 2 heaps, one min one max, top of each heap should be the middle of the stream
+    - push into one, pop from that one and push into the other.
+    - that reorders the middle
+    - determine which one is always gonna be bigger, test and pushpop accordingly
+    - to get the median check if the designated bigger is bigger, if so peek it
+    - if not they are equal, so peak both and divide by 2
