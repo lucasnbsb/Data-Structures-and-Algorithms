@@ -11,7 +11,7 @@
     - if in map (is closed) -> pop from the stack, has to match the top of the stack, otherwise false
     - if is oppen just append
 ## 21 Merge Two Sorted Lists:
-    - start a dummy pointer
+   e - start a dummy pointer
     - two pointer for each list
     - while both are good, check and point acordingly
     - one of the pointers are still good, just point the tail to it
@@ -160,6 +160,10 @@
     - calculate the list of prefix multis and postfix multis for every i.
     - return pre[i]*pos[i]
     - the operation can be done inside the output array for O(N) extra memory
+
+### 547. Number of Provinces
+    - Run union find.
+    - after the union, if a union has been performed you can decrement a counter starting at the number of cities
 
 # Hard
 
