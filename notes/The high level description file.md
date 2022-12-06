@@ -146,6 +146,11 @@
     - four small loops for every direction, check again in the middle for pointers crossing
     - take a lot of care with the indices on right and bottom for they are out of bounds
 
+### 55. Jump Game
+    - start backwards, keep a goalpost on the last element
+    - shift the goalpost (greedy) as you find possible jumps to the goal
+    - return true if goalpost hits the 0 element
+
 ### 56. Merge Intervals.py
     - sort the intervals by starting position
     - traverse the sorted intervals
