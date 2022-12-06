@@ -170,6 +170,13 @@
     - Run union find.
     - after the union, if a union has been performed you can decrement a counter starting at the number of cities
 
+### 2491. Divide Players Into Teams of Equal Skill
+    - find the target skill by finding the max and min in the same treversal.
+    - while populating a counting dictionary
+    - walk the min and max closer to the midle in a loop checking if both hit the dict simetrically
+    - decrement the counts on the dict and update the running sum accordingly
+    - return -1 all the way if conditions are not satisfied
+
 # Hard
 
 ### Find the running medinan:
