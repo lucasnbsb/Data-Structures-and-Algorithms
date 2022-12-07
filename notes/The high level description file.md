@@ -170,6 +170,11 @@
     - Run union find.
     - after the union, if a union has been performed you can decrement a counter starting at the number of cities
 
+### 994. Rotting Oranges
+    - Matrix BFS
+    - Treverse first to determine where are the first rotten oranges and count the fresh ones
+    - Run bfs from each rotten one and everytime you hit a fresh one update the count and put it in the rotten queue.
+
 ### 1091. Shortest Path in Binary Matrix
     - Run BFS on the matrix.
     - check for stop condition as you pop from the pile
