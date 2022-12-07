@@ -170,6 +170,15 @@
     - Run union find.
     - after the union, if a union has been performed you can decrement a counter starting at the number of cities
 
+### 1091. Shortest Path in Binary Matrix
+    - Run BFS on the matrix.
+    - check for stop condition as you pop from the pile
+    - return -1 on default
+    - pay attention to the conditions,
+    - min(rows,cols) < 0 is a nice way to cut down on too much code.
+    - max(rows,cols) > ROWS or COLS also a nice way if it is always square
+
+
 ### 2491. Divide Players Into Teams of Equal Skill
     - find the target skill by finding the max and min in the same treversal.
     - while populating a counting dictionary
