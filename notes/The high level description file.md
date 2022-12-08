@@ -167,6 +167,11 @@
     - return the [0][0] position
     - IF YOU EVEN SUSPECT DP PUT IT IN PAPER. the problem gets much easier once you have visualized it
 
+### 63. Unique Paths II
+    - Basicaly the obstacle sets the value to 0
+    - And you have to pay attention to propagate zeroes on the last column and last row.
+    - Once you solved Unique Paths 1 it's just a small adjustment
+
 ### 73. Set Matrix Zeroes
     - use the first position of the rows and colums to mark for zeroes and sweep around
     - to actualy do it easier use 2 arrays to index where to blank out
