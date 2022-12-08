@@ -203,6 +203,14 @@
     - min(rows,cols) < 0 is a nice way to cut down on too much code.
     - max(rows,cols) > ROWS or COLS also a nice way if it is always square
 
+### 1147 Longest Common Subsequence
+    - Both bottom up and top down approaches work
+    - with DP the problem is always figuring out how to find the subproblems and visualizing
+    - the relationship of the problem and the subproblem
+    - in this case we use a matrix of len(text1)+1 x len(text2)+1 to serve as the cache
+    - the relationship is that if your indexed characters mach you increment both strings so you move diagonaly
+    - if they dont you get the max of the increment of either, so the right and down ( or up and left, depending on how you are traversing.)
+    - 
 
 ### 2491. Divide Players Into Teams of Equal Skill
     - find the target skill by finding the max and min in the same treversal.
