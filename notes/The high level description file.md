@@ -157,6 +157,16 @@
     - check if the last interval ends after the current start, if so merge them in the output
     - if they dont just append to output
 
+### 62. Unique Paths
+    - two dimentional dp.
+    - figure out what a position needs to calculate
+    - work backwards from the end
+    - realize the last column and last row have all 1's in the how many paths from here to the end department
+    - fill those ones,
+    - iterate inside the remaining matrix calculating the current position by calculating the sum of the right and the down one from there
+    - return the [0][0] position
+    - IF YOU EVEN SUSPECT DP PUT IT IN PAPER. the problem gets much easier once you have visualized it
+
 ### 73. Set Matrix Zeroes
     - use the first position of the rows and colums to mark for zeroes and sweep around
     - to actualy do it easier use 2 arrays to index where to blank out
