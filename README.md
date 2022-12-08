@@ -1,5 +1,19 @@
+# A high level description of most solutions i have uploaded so far.
 
-# A high level description of every solution i have submitted to leetcode
+## Motivation:
+I decided to go back and rebuild my skills from the ground up. So I'm starting with Data Structures and Algorithms.
+
+## Accomplisments thus far:
+- Was able to pass an Amazon coding challenge to get into the selection process.
+- Participated in 2 Leetcode contests, ended up in the middle of the pack, but still climbing.
+- Over 100 problems were solved.
+
+## What i gained so far:
+- I'm able to read and understand code much faster
+- Gained an understanding of DSA stronger than what i had coming out of college years ago.
+- Learned python
+
+
 
 # Easy
 ## 1 Two sum:
