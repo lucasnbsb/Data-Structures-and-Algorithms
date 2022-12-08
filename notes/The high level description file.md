@@ -161,6 +161,11 @@
     - use the first position of the rows and colums to mark for zeroes and sweep around
     - to actualy do it easier use 2 arrays to index where to blank out
 
+### 198. House Robber
+    - A pretty fundamental problem in learning DP
+    - Always the same approach, identify the recursive relationship, simplify into what is actualy needed to calculate the next position.
+    - this one is way easier if you visualize the dp cache in terms of robIncludingLast and robExcludingLast
+
 ### 238. Product of Array Except Self
     - calculate the list of prefix multis and postfix multis for every i.
     - return pre[i]*pos[i]
