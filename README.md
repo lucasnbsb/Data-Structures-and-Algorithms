@@ -132,7 +132,10 @@ I decided to go back and rebuild my skills from the ground up. So I'm starting w
     - A pretty fundamental problem in learning DP
     - Always the same approach, identify the recursive relationship, simplify into what is actualy needed to calculate the next position.
     - this one is way easier if you visualize the dp cache in terms of robIncludingLast and robExcludingLast
-
+### 221. Maximal Square
+    - DP, also it's anoying that the matrix is in chars instead of int
+    - m[i][j] = 1 + min(m[i+1][+1], m[i+1][j], m[i][j+1]).
+    - nothing much else aside from the fundamental relation of the problem and subproblem
 ### 238. Product of Array Except Self
     - calculate the list of prefix multis and postfix multis for every i.
     - return pre[i]*pos[i]
