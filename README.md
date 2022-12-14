@@ -140,7 +140,13 @@ I decided to go back and rebuild my skills from the ground up. So I'm starting w
     - calculate the list of prefix multis and postfix multis for every i.
     - return pre[i]*pos[i]
     - the operation can be done inside the output array for O(N) extra memory
-
+### 253. Meeting rooms 2
+    - get a sorted list of start and end times
+    - iterate on the start list
+    - compare start and end
+    - each start before and end increments
+    - each end decrements
+    - get the max
 ### 547. Number of Provinces
     - Run union find.
     - after the union, if a union has been performed you can decrement a counter starting at the number of cities
