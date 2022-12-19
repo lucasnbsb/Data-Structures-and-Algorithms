@@ -9,6 +9,3 @@ class Solution:
             else:
                 output.append(intervals[i])
         return output
-                
-    intervals = [[1,3],[2,6],[8,10],[15,18]]
-    print(erge(intervals))
