@@ -12,4 +12,4 @@ class Solution:
                 right -=1
             else:
                 left += 1
-        return maxarea
+        return maxarea                        

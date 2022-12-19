@@ -4,6 +4,6 @@ class Solution:
         h = len(haystack)
         needlehash = hash(needle)
         for i in range(h-n+1):
-            if hash(haystack[i:i+n]) == needlehash:
+            if needle[0] == haystack[i] and hash(haystack[i:i+n]) == needlehash:
                 return i
         return -1
