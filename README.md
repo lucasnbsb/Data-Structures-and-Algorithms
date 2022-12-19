@@ -92,6 +92,10 @@ I decided to go back and rebuild my skills from the ground up. So I'm starting w
     - the trick is to address the squares one with a tuple made of x//3, y//3 to check for repetitions within the square
     - then just itterate, check for repetitions on all 3, return false if repeated, and add to the sets if not.
 
+### 49. Group Anagrams
+    - use a hashmap. key is the word sorted( ''.join(sorted(word))) value is an array of lists.
+    - you can use a defaultdict(list) for that.
+    - iterate over the values and append to output
 ### 54. Spiral Matrix.py
     - two pointers approach, four pointers edition
     - big loop, check if pointers cross
