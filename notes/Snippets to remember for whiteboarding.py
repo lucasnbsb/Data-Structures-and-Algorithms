@@ -52,3 +52,7 @@ for x in range(r-1, r+2):
             y >= 0 and y < COLS and
             not (x==r and y==c):
                 #do something
+
+# Sorting:
+sort(reverse = True)
+sort()

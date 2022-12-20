@@ -25,7 +25,12 @@ I decided to go back and rebuild my skills from the ground up. So I'm starting w
     - traverse the input string jumping by window size
     - check the substring from the current position to the end of the window size, and update a copy of the counting hashmap to keep track of the remaining words.
     - if the remaining goes below zero or the number or words remaining is different from the words used continue, else add the current index to the output.
-    - 
+### 42. Trapping Rain Water.py
+    - get a helper array
+    - traverse normaly registering the max height seen up to the current
+    - traverse backwards updating the helper with min(maxFromRight, maxFromLeft - h) ( the amount of water in any given rectangle)
+    - sum the helper
+
 ### 295 Find the running medinan (hackerrank and leetcode):
     - 2 heaps, one min one max, top of each heap should be the middle of the stream
     - push into one, pop from that one and push into the other.

@@ -90,3 +90,49 @@ def binary_search(array) -> int:
 
 # left is the minimun number s.t condition = true.
 # left-1 is the maximun number s.t condition = false.
+
+
+#Union Find 
+
+class UnionFind:
+    def __init__(self, n):
+        self.parents = {}
+        self.rank = {}
+        #graphs with node marked 1 to n
+        for i in ranger(1, n+1):
+            self.parents[i] = i
+            self.rank[i] = 0
+
+    def find(self, n):
+        par = self.parents[n]
+        while par != self.parents[par]:
+            #path compression
+            self.parents[par] = self.parents[self.parents[par]]
+            par = self.parents[par]
+        return par
+    
+    def union(self, n, m):
+        p1, p2 = self.find(n), self.find(m)
+
+        if p1 == p2: return False
+        
+        if self.rank[p1] > self.rank[p2]:
+            self.parents[p2] = p1
+        elif self.rank[p2] > self.rank[p1]:
+            self.parents[p1] = p2
+        else:
+            self.parents[p1] = p2
+            self.rank[p2] += 1
+        return True 
+
+# Kruskal's -> minimun spannign tree
+    # joga tudo num minheap
+    # vai tirando do heap até que arestas = nodos-1
+    # se union(i,j) == false continue
+    # se nao poe na msp
+
+# Kadane:
+    cur = max(cur+n, n)
+    max =max(cur, max)
+
+
