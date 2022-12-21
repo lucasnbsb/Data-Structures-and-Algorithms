@@ -136,6 +136,10 @@ I decided to go back and rebuild my skills from the ground up. So I'm starting w
 ### 73. Set Matrix Zeroes
     - use the first position of the rows and colums to mark for zeroes and sweep around
     - to actualy do it easier use 2 arrays to index where to blank out
+### 138. Copy list with random pointer
+    - iterate once creating the copy without the rando
+    - make a reference with a hashmap from the old to the new
+    - traverse the old again linking the random with the adress
 
 ### 198. House Robber
     - A pretty fundamental problem in learning DP

@@ -37,15 +37,11 @@ a[::-1] # reverse
 ''.join(currentString)
 
 # iterar de trás pra frente
-for a in range(len(array), -1, -1 ):
-
+for a in range(len(array)-1 , -1, -1 ):
 # (x//3, y//3) - addressing squares in sudoku
 
-myhashmap = {}
-myhashmap[i] = 0
 
 # Checking neighbors
-
 for x in range(r-1, r+2):
     for y in range(c-1, c+2):
         if (x >= 0 and x < ROWS and
@@ -54,5 +50,16 @@ for x in range(r-1, r+2):
                 #do something
 
 # Sorting:
-sort(reverse = True)
-sort()
+arr.sort(key = lambda i: i[0])
+arr.sort(reverse = True)
+arr.sort()
+
+# Heaps
+import heapq
+minHeap = []
+heapq.heappush(minHeap, [index, whatever, else_])
+heapq.heappop()
+
+#List Comprehension
+grid = [[1]*n for _ in range(m)]
+
