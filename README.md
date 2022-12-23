@@ -163,7 +163,11 @@ I decided to go back and rebuild my skills from the ground up. So I'm starting w
 ### 547. Number of Provinces
     - Run union find.
     - after the union, if a union has been performed you can decrement a counter starting at the number of cities
-
+### 739. Daily Temperatures
+    - monotone decreasing stack
+    - start output with all 0s
+    - stack the temps lower than the top
+    - pop the ones larger than the top and update the corresponding index
 ### 994. Rotting Oranges
     - Matrix BFS
     - Treverse first to determine where are the first rotten oranges and count the fresh ones
