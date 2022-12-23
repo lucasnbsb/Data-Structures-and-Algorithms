@@ -4,8 +4,8 @@
 I decided to go back and rebuild my skills from the ground up. So I'm starting with Data Structures and Algorithms.
 
 ## Accomplisments thus far:
-- was able to pass an Amazon coding challenge to get into the selection process.
-- Participated in 2 Leetcode contests, ended up in the middle of the pack, but still climbing.
+- was able to pass an Amazon coding challenge to get into the selection process. and the follow up interview
+- Participated in 3 Leetcode contests, still climbing
 - over 100 problems were solved.
 
 ## What i gained so far:
