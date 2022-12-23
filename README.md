@@ -168,6 +168,10 @@ I decided to go back and rebuild my skills from the ground up. So I'm starting w
     - each start before and end increments
     - each end decrements
     - get the max
+### 347. Top K Frequent Elements
+    - iterate first to create a counter map
+    - iterate the keys and push them into a max heap
+    - pop the heap k times
 ### 547. Number of Provinces
     - Run union find.
     - after the union, if a union has been performed you can decrement a counter starting at the number of cities
