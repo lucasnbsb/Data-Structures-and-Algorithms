@@ -140,7 +140,10 @@ I decided to go back and rebuild my skills from the ground up. So I'm starting w
     - iterate once creating the copy without the rando
     - make a reference with a hashmap from the old to the new
     - traverse the old again linking the random with the adress
-
+### 150. Evaluate Reverse Polish Notation
+    - nasty type conversions in the division case
+    - otherwise its polish notation, just stack it up and
+    - mind the order of the operators
 ### 198. House Robber
     - A pretty fundamental problem in learning DP
     - Always the same approach, identify the recursive relationship, simplify into what is actualy needed to calculate the next position.
