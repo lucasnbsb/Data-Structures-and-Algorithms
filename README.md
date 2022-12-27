@@ -149,12 +149,16 @@ I decided to go back and rebuild my skills from the ground up. So I'm starting w
     - iterate once creating the copy without the rando
     - make a reference with a hashmap from the old to the new
     - traverse the old again linking the random with the adress
+### 143. Reorder List
+    - put the nodes on a hashmap so you can index them like an array
+    - then just iterate pointing the next at the right nodes
+    - take care of the indexing in the hashmap.  
 ### 150. Evaluate Reverse Polish Notation
     - nasty type conversions in the division case
     - otherwise its polish notation, just stack it up and
     - mind the order of the operators
 ### 153. Find Minimum in Rotated Sorted Array
-    - 
+    - binary search in rotated, same idea as the other one (ctrl+f for rotated)
 ### 167. Two Sum II - Input Array Is Sorted
     - binary search
     - walk the right and left pointers one by one
@@ -177,6 +181,9 @@ I decided to go back and rebuild my skills from the ground up. So I'm starting w
     - each start before and end increments
     - each end decrements
     - get the max
+#### 287. Find the Duplicate Number
+    - floyds algo. use slow fast to find the cycle. reset one of them to the start
+    - walk both at the same pace till they meet at the start of the loop
 ### 347. Top K Frequent Elements
     - iterate first to create a counter map
     - iterate the keys and push them into a max heap
@@ -193,6 +200,12 @@ I decided to go back and rebuild my skills from the ground up. So I'm starting w
     - sort the array by distance
     - iterate in reverse
     - use the eta to count the fleets
+
+### 981. Time Based Key-Value Store
+    - hashmap of lists for the store
+    - binary search for the indexing
+    - 
+
 ### 994. Rotting Oranges
     - Matrix BFS
     - Treverse first to determine where are the first rotten oranges and count the fresh ones
