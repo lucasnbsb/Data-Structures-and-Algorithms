@@ -91,6 +91,10 @@ I decided to go back and rebuild my skills from the ground up. So I'm starting w
     - traverse the input string until 1+size(s)-wordlengh checking the
     validity of the window and appending the index to the result
 
+### 33. Search in Rotated Sorted Array
+    - its still binary search
+    - for every mid you have to figure out in what sorted half you are and then act acordingly
+
 ### 36. Valid Sudoku
     - this one hinges heavily on the data structure you choose
     - get some defaultdict(set)s going. for rows, collumns and squares
@@ -149,6 +153,11 @@ I decided to go back and rebuild my skills from the ground up. So I'm starting w
     - nasty type conversions in the division case
     - otherwise its polish notation, just stack it up and
     - mind the order of the operators
+### 153. Find Minimum in Rotated Sorted Array
+    - 
+### 167. Two Sum II - Input Array Is Sorted
+    - binary search
+    - walk the right and left pointers one by one
 ### 198. House Robber
     - A pretty fundamental problem in learning DP
     - Always the same approach, identify the recursive relationship, simplify into what is actualy needed to calculate the next position.
@@ -180,6 +189,10 @@ I decided to go back and rebuild my skills from the ground up. So I'm starting w
     - start output with all 0s
     - stack the temps lower than the top
     - pop the ones larger than the top and update the corresponding index
+### 853. Car Fleet
+    - sort the array by distance
+    - iterate in reverse
+    - use the eta to count the fleets
 ### 994. Rotting Oranges
     - Matrix BFS
     - Treverse first to determine where are the first rotten oranges and count the fresh ones
