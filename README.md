@@ -28,8 +28,19 @@ I decided to go back and rebuild my skills from the ground up. So I'm starting w
 ### 42. Trapping Rain Water.py
     - get a helper array
     - traverse normaly registering the max height seen up to the current
-    - traverse backwards updating the helper with min(maxFromRight, maxFromLeft - h) ( the amount of water in any given rectangle)
+    - traverse backwards updating the helper with min(maxFromRight, maxFromLeft - h) ( the amount of water in any given rectangle
     - sum the helper
+
+### 51 N-Queens and 52. N-Queens II
+    - this one is actually hard.
+    - backtracking (dfs)
+    - use the len of queens as rows, that takes care of that check
+    - put in the array of queens the column in which the queen should go
+    - if you placed 4 queens append the array to the output
+    - check for the column by checking the array of queens
+    - check for diagonals by checking X-Y = P-Q for the antidiagonal and X+Y = P+Q for the diagonal
+    - if you pass, recursive call adding the column to the rows array and the diff and sum to the arrays of diff and sum
+    - you can also use a set or a hashmap, but the array has less overhead since you are already checking for existance
 
 ### 76. Minimum Window Substring
     - sliding window, expand right until you get a valid window
