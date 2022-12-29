@@ -191,6 +191,9 @@ I decided to go back and rebuild my skills from the ground up. So I'm starting w
 ### 547. Number of Provinces
     - Run union find.
     - after the union, if a union has been performed you can decrement a counter starting at the number of cities
+### 567. Permutation in String
+    - count into a dictionary the letters of s1
+    - slide a window of size (len(s1)-1) on s2 putting into a dictionary and check for equality of values in the dict.
 ### 739. Daily Temperatures
     - monotone decreasing stack
     - start output with all 0s
