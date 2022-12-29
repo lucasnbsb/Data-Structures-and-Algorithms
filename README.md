@@ -31,6 +31,19 @@ I decided to go back and rebuild my skills from the ground up. So I'm starting w
     - traverse backwards updating the helper with min(maxFromRight, maxFromLeft - h) ( the amount of water in any given rectangle)
     - sum the helper
 
+### 76. Minimum Window Substring
+    - sliding window, expand right until you get a valid window
+    - remove from left until window is invalid
+    - keep walking right and left to the end and testing agains the minimum window
+
+### 239. Sliding Window Maximum
+    - keep a queue of elements
+    - at every new element:
+      - remove from the queue the ones outside the window range
+      - remove the ones smaller than the current
+      - append the current
+      - if you are in window range, append to the output the head of the queue
+
 ### 295 Find the running medinan (hackerrank and leetcode):
     - 2 heaps, one min one max, top of each heap should be the middle of the stream
     - push into one, pop from that one and push into the other.
