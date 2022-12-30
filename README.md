@@ -77,6 +77,11 @@ I decided to go back and rebuild my skills from the ground up. So I'm starting w
     - remove all characters maching the left pointer as it walks along , till you get to the repeated character
     - update maxsize after before walking the right pointer
 
+### 5. Longest Palindromic Substring
+    - two pointer scan on every position
+    - keep track of the largest string
+    - check for odd and even length strings by having the check start with r and l at the same position (odd) and on consecutive positions (even)
+
 ### 7. Reverse Integer
     - store a boolean for isnegative on the number
     - use the absolute value of the number
@@ -220,12 +225,27 @@ I decided to go back and rebuild my skills from the ground up. So I'm starting w
     - pop the heap k times
 ### 416. Partition Equal Subset Sum
     - Knapsack 0/1 for half the value of the sum.
+
+### 516. Longest Palindromic Subsequence
+    - 2D dp. dp[l][r] is the longest palindromic subsequence from l to r
+    - draw it out
+    - if l = r then 1
+    - if the positions match the length is 2 + the length of the inner subsequence
+    - if they are not dp is equal the max of each subsequence reducing from the left or right
+    - iterate backwards through the rows. 
+
 ### 547. Number of Provinces
     - Run union find.
     - after the union, if a union has been performed you can decrement a counter starting at the number of cities
 ### 567. Permutation in String
     - count into a dictionary the letters of s1
     - slide a window of size (len(s1)-1) on s2 putting into a dictionary and check for equality of values in the dict.
+
+### 647. Palindromic Substrings
+    - run a two pointers scan for every position (l and r at i)
+    - accounting for odd lengths and even lengths (l = i, r = i+1)
+    
+
 ### 739. Daily Temperatures
     - monotone decreasing stack
     - start output with all 0s
