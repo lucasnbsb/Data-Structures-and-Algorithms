@@ -190,6 +190,12 @@ I decided to go back and rebuild my skills from the ground up. So I'm starting w
     - A pretty fundamental problem in learning DP
     - Always the same approach, identify the recursive relationship, simplify into what is actualy needed to calculate the next position.
     - this one is way easier if you visualize the dp cache in terms of robIncludingLast and robExcludingLast
+
+### 213. House Robber II
+    - run house robber 1 on the array ignoring the first and last position and take the max
+    - House robber 1 is dp with the two variables for robIncludingLast and robExcludingLast
+
+
 ### 221. Maximal Square
     - DP, also it's anoying that the matrix is in chars instead of int
     - m[i][j] = 1 + min(m[i+1][+1], m[i+1][j], m[i][j+1]).
@@ -212,6 +218,8 @@ I decided to go back and rebuild my skills from the ground up. So I'm starting w
     - iterate first to create a counter map
     - iterate the keys and push them into a max heap
     - pop the heap k times
+### 416. Partition Equal Subset Sum
+    - Knapsack 0/1 for half the value of the sum.
 ### 547. Number of Provinces
     - Run union find.
     - after the union, if a union has been performed you can decrement a counter starting at the number of cities
