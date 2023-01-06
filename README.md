@@ -5,8 +5,9 @@ I decided to go back and rebuild my skills from the ground up. So I'm starting w
 
 ## Accomplisments thus far:
 - was able to pass an Amazon coding challenge to get into the selection process. and the follow up interview
-- Participated in 3 Leetcode contests, still climbing
-- over 100 problems were solved.
+- Participated in 4 Leetcode contests, rated 1544, top 30% , still climbing
+- Got my 50 days of leetcode badge
+- 200 problems solved.
 
 ## What i gained so far:
 - I'm able to read and understand code much faster
@@ -54,6 +55,10 @@ I decided to go back and rebuild my skills from the ground up. So I'm starting w
       - remove the ones smaller than the current
       - append the current
       - if you are in window range, append to the output the head of the queue
+
+### 297. Serialize and Deserialize Binary Tree
+    - either BFS or DFS, not that hard tbh, just traverse to serialize and keep an index running
+    - to deserialize
 
 ### 295 Find the running medinan (hackerrank and leetcode):
     - 2 heaps, one min one max, top of each heap should be the middle of the stream
@@ -200,11 +205,15 @@ I decided to go back and rebuild my skills from the ground up. So I'm starting w
     - run house robber 1 on the array ignoring the first and last position and take the max
     - House robber 1 is dp with the two variables for robIncludingLast and robExcludingLast
 
-
 ### 221. Maximal Square
     - DP, also it's anoying that the matrix is in chars instead of int
     - m[i][j] = 1 + min(m[i+1][+1], m[i+1][j], m[i][j+1]).
     - nothing much else aside from the fundamental relation of the problem and subproblem
+### 236. Lowest Common Ancestor of a Binary Tree
+    - you don`t have to keep going once you find one of the nodes
+    - run dfs, return if you find the node or on null
+    - check if left and right (found both on different branches) and return root
+    - then left or right (found one and the other was downstream) and return the one not null (it is the ancestor itself)
 ### 238. Product of Array Except Self
     - calculate the list of prefix multis and postfix multis for every i.
     - return pre[i]*pos[i]
@@ -285,6 +294,11 @@ I decided to go back and rebuild my skills from the ground up. So I'm starting w
 
 ### 1161. Maximum Level Sum of a Binary Tree (google prep)
     - Run bfs, make sure to use -inf as the maxSum
+
+### 1448. Count Good Nodes in Binary Tree
+    - DFS
+    - keep a running maximum, compare each node to the maximum
+    - add to the list of good nodes accordingly
 
 ### 2491. Divide Players Into Teams of Equal Skill
     - find the target skill by finding the max and min in the same treversal.
