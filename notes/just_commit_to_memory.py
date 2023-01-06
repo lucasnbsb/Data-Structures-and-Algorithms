@@ -1,8 +1,5 @@
 from collections import deque
-import numpy as np
 # this is the big file of things i should just remember
-
-
 
 # Quicksort:
 def quicksort(arr, s, e):
@@ -15,7 +12,7 @@ def quicksort(arr, s, e):
             #Swap with left
             arr[i], arr[left]  = arr[left], arr[i]
             left+= 1
-    #Stap pivot with the middle
+    #Swap pivot with the middle
     arr[e] , arr[left] = arr[left], arr[e]
     quicksort(arr, s, left-1) # the middle one is alredy in order
     quicksort(arr, left+1, e)
