@@ -204,7 +204,10 @@ I decided to go back and rebuild my skills from the ground up. So I'm starting w
 ### 213. House Robber II
     - run house robber 1 on the array ignoring the first and last position and take the max
     - House robber 1 is dp with the two variables for robIncludingLast and robExcludingLast
-
+### 211. Design Add and Search Words Data Structure
+    - Use a trie
+    - use a dfs helper function to get the wildcard characters
+    - pretty easy
 ### 221. Maximal Square
     - DP, also it's anoying that the matrix is in chars instead of int
     - m[i][j] = 1 + min(m[i+1][+1], m[i+1][j], m[i][j+1]).
