@@ -313,6 +313,11 @@ I decided to go back and rebuild my skills from the ground up. So I'm starting w
     - decrement the counts on the dict and update the running sum accordingly
     - return -1 all the way if conditions are not satisfied
 
+### 2527. Find Xor-Beauty of Array
+    - this one is nice. once you put the computation to paper everything cancels out
+    - and you just have to XOR the main diagonal of the matrix
+    - only the cases where i=j=k actually contribute to the output
+
 # Easy
 ## 1 Two sum:
     - make a hashmap [dif:number]
