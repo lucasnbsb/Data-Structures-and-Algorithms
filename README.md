@@ -183,6 +183,8 @@ I decided to go back and rebuild my skills from the ground up. So I'm starting w
 ### 131. Palindrome Partitioning
     - traverse the input calling dfs, only go deeper if the substring up to the index checked is a palindrome
     - to go deeper, add the current partition to the path and reduce the input
+### 136. Single Number
+    - just xor everything, make use of the fact that x^x = 0
 ### 138. Copy list with random pointer
     - iterate once creating the copy without the rando
     - make a reference with a hashmap from the old to the new
