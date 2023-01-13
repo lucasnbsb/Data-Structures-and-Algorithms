@@ -3,9 +3,9 @@
 ## Motivation:
 I decided to go back and rebuild my skills from the ground up. So I'm starting with Data Structures and Algorithms.
 
-## Accomplisments thus far:
+## Accomplishments thus far:
 - was able to pass an Amazon coding challenge to get into the selection process. and the follow up interview
-- Participated in 4 Leetcode contests, rated 1544, top 30% , still climbing
+- Participated in 6 Leetcode contests, rated 1587, top 23% , still climbing
 - Got my 50 days of leetcode badge
 - 200 problems solved.
 
@@ -13,6 +13,7 @@ I decided to go back and rebuild my skills from the ground up. So I'm starting w
 - I'm able to read and understand code much faster
 - Gained an understanding of DSA stronger than what i had coming out of college years ago.
 - Learned python
+- Wrote faster code overal ever since
 
 # Hard
 ### 23. Merge k Sorted Lists
