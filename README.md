@@ -356,6 +356,10 @@ I decided to go back and rebuild my skills from the ground up. So I'm starting w
     - push,test if sum is path and leaf, left, right, pop
 ## 145 Binart tree Postorder
     - left, right, node
+
+## 191. Number of 1 Bits
+    - hamming weight algo
+    - just shift and count with & 1
 ## 206 Reverse Linked List
     - keep a pointer to the last
     - use a temporary next pointr
