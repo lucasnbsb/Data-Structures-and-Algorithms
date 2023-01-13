@@ -328,6 +328,9 @@ I decided to go back and rebuild my skills from the ground up. So I'm starting w
     - and you just have to XOR the main diagonal of the matrix
     - only the cases where i=j=k actually contribute to the output
 
+### 2530. Maximal Score After Applying K Operations
+    - be greedy, put everything into a max heap
+    - pop and push k times applying the opperation
 # Easy
 ## 1 Two sum:
     - make a hashmap [dif:number]
@@ -422,3 +425,6 @@ I decided to go back and rebuild my skills from the ground up. So I'm starting w
 ## 2373 Largest Local in the Matrix
     - its just a matter of treversing the right way
     - you have to check all of them.
+
+### 2529. Maximum Count of Positive Integer and Negative Integer
+    - the title is the answer, this took 40 seconds
