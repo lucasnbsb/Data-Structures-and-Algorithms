@@ -235,6 +235,12 @@ I decided to go back and rebuild my skills from the ground up. So I'm starting w
 #### 287. Find the Duplicate Number
     - floyds algo. use slow fast to find the cycle. reset one of them to the start
     - walk both at the same pace till they meet at the start of the loop
+
+### 371. Sum of Two Integers
+    - this is easy on every language but python
+    - carry is an and shifted
+    - sum is a xor. keep iterating
+
 ### 347. Top K Frequent Elements
     - iterate first to create a counter map
     - iterate the keys and push them into a max heap
@@ -257,11 +263,15 @@ I decided to go back and rebuild my skills from the ground up. So I'm starting w
     - count into a dictionary the letters of s1
     - slide a window of size (len(s1)-1) on s2 putting into a dictionary and check for equality of values in the dict.
 
+### 621. Task Scheduler
+    - traverse to make a counter
+    - get a maxheap for the counter
+    - get a queue to model the cooldownzone,
+    - the length of the queue is the cooldown
+
 ### 647. Palindromic Substrings
     - run a two pointers scan for every position (l and r at i)
     - accounting for odd lengths and even lengths (l = i, r = i+1)
-    
-
 ### 739. Daily Temperatures
     - monotone decreasing stack
     - start output with all 0s
@@ -271,12 +281,9 @@ I decided to go back and rebuild my skills from the ground up. So I'm starting w
     - sort the array by distance
     - iterate in reverse
     - use the eta to count the fleets
-
 ### 981. Time Based Key-Value Store
     - hashmap of lists for the store
     - binary search for the indexing
-    - 
-
 ### 994. Rotting Oranges
     - Matrix BFS
     - Treverse first to determine where are the first rotten oranges and count the fresh ones
@@ -371,6 +378,10 @@ I decided to go back and rebuild my skills from the ground up. So I'm starting w
 ## 278 First Bad Version
     - Thats a generic binary search, Remember the algo
     - gotta have a function to test.
+
+## 338. Counting Bits
+    - sum the &1 and shift
+
 ## 344 Reverse String
     - Two pointers start and end, start < end, swap and walk
 ## 350 Intersection of Two Arrays
