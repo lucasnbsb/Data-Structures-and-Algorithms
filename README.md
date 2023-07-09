@@ -1,7 +1,7 @@
 # A high level description of most solutions i have uploaded so far.
 
 ## Motivation:
-I decided to go back and rebuild my skills from the ground up. So I'm starting with Data Structures and Algorithms.
+I decided to go back and rebuild my skills from the ground up. So i started with Data Structures and Algorithms.
 
 ## Accomplishments thus far:
 - was able to pass an Amazon coding challenge to get into the selection process. and the follow up interview
